@@ -1,0 +1,284 @@
+/* 圖片精靈image sprite開始
+{
+  colors as "S"pade, "C"lub, "H"eart, "D"iamond
+  */
+  .S1, .S2, .S3, .S4, .S5, .S6, .S7, .S8, .S9, .S10, .S11, .S12, .S13, .C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8, .C9, .C10, .C11, .C12, .C13, .H1, .H2, .H3, .H4, .H5, .H6, .H7, .H8, .H9, .H10, .H11, .H12, .H13, .D1, .D2, .D3, .D4, .D5, .D6, .D7, .D8, .D9, .D10, .D11, .D12, .D13, .blank {
+    display: inline-block;
+    background-image: url(../image/pokerCards.png);
+    background-repeat: no-repeat;
+    height: 112px;
+    width: 80px
+  }
+
+  .S1 {
+    background-position: -0px -0px;
+  }
+
+  .S2 {
+    background-position: -80px -0px;
+  }
+
+  .S3 {
+    background-position: -160px -0px;
+  }
+
+  .S4 {
+    background-position: -240px -0px;
+  }
+
+  .S5 {
+    background-position: -320px -0px;
+  }
+
+  .S6 {
+    background-position: -400px -0px;
+  }
+
+  .S7 {
+    background-position: -480px -0px;
+  }
+
+  .S8 {
+    background-position: -560px -0px;
+  }
+
+  .S9 {
+    background-position: -640px -0px;
+  }
+
+  .S10 {
+    background-position: -720px -0px;
+  }
+
+  .S11 {
+    background-position: -800px -0px;
+  }
+
+  .S12 {
+    background-position: -880px -0px;
+  }
+
+  .S13 {
+    background-position: -960px -0px;
+  }
+
+  .C1 {
+    background-position: -0px -112px;
+  }
+
+  .C2 {
+    background-position: -80px -112px;
+  }
+
+  .C3 {
+    background-position: -160px -112px;
+  }
+
+  .C4 {
+    background-position: -240px -112px;
+  }
+
+  .C5 {
+    background-position: -320px -112px;
+  }
+
+  .C6 {
+    background-position: -400px -112px;
+  }
+
+  .C7 {
+    background-position: -480px -112px;
+  }
+
+  .C8 {
+    background-position: -560px -112px;
+  }
+
+  .C9 {
+    background-position: -640px -112px;
+  }
+
+  .C10 {
+    background-position: -720px -112px;
+  }
+
+  .C11 {
+    background-position: -800px -112px;
+  }
+
+  .C12 {
+    background-position: -880px -112px;
+  }
+
+  .C13 {
+    background-position: -960px -112px;
+  }
+
+  .H1 {
+    background-position: -0px -224px;
+  }
+
+  .H2 {
+    background-position: -80px -224px;
+  }
+
+  .H3 {
+    background-position: -160px -224px;
+  }
+
+  .H4 {
+    background-position: -240px -224px;
+  }
+
+  .H5 {
+    background-position: -320px -224px;
+  }
+
+  .H6 {
+    background-position: -400px -224px;
+  }
+
+  .H7 {
+    background-position: -480px -224px;
+  }
+
+  .H8 {
+    background-position: -560px -224px;
+  }
+
+  .H9 {
+    background-position: -640px -224px;
+  }
+
+  .H10 {
+    background-position: -720px -224px;
+  }
+
+  .H11 {
+    background-position: -800px -224px;
+  }
+
+  .H12 {
+    background-position: -880px -224px;
+  }
+
+  .H13 {
+    background-position: -960px -224px;
+  }
+
+  .D1 {
+    background-position: -0px -336px;
+  }
+
+  .D2 {
+    background-position: -80px -336px;
+  }
+
+  .D3 {
+    background-position: -160px -336px;
+  }
+
+  .D4 {
+    background-position: -240px -336px;
+  }
+
+  .D5 {
+    background-position: -320px -336px;
+  }
+
+  .D6 {
+    background-position: -400px -336px;
+  }
+
+  .D7 {
+    background-position: -480px -336px;
+  }
+
+  .D8 {
+    background-position: -560px -336px;
+  }
+
+  .D9 {
+    background-position: -640px -336px;
+  }
+
+  .D10 {
+    background-position: -720px -336px;
+  }
+
+  .D11 {
+    background-position: -800px -336px;
+  }
+
+  .D12 {
+    background-position: -880px -336px;
+  }
+
+  .D13 {
+    background-position: -960px -336px;
+  }
+
+  .blank {
+    background-position: -1040px -0px;
+  }
+  /*
+}
+圖片精靈image sprite結束
+*/
+
+body {
+  font-family: '文泉驛微米黑', 'LiHei Pro', '微軟正黑體', sans-serif;
+  font-size: 20px;
+
+}
+
+.main {
+  float: left;
+  margin: 100px 50px;
+  width: 60%;
+}
+
+.side {
+  float: right;
+  margin: 60px 150px 150px 0;
+}
+
+.play {
+  margin: 10px 0 50px;
+  position: relative;
+}
+
+.header {
+  height: 30px;
+}
+
+.body {
+  display: inline-block;
+}
+
+.state {
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 50px;
+  font-color: red;
+}
+
+.empty {
+  width: 80px;
+  height: 112px;
+  margin: 10px 0;
+  border: 3px double grey;
+  display: inline-block;
+}
+
+.moreCards {
+  position: absolute;
+  display: inline-block;
+  margin-left: 20px;
+  bottom: 0;
+}
+
+.token {
+  display: inline-block;
+  width: 80px;
+}

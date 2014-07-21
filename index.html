@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8">
+  <title>一起來玩十點半！</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <link href = "styles/style.css" rel = "stylesheet" type = "text/css" />
+  <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+  <script type = "text/javascript" src = "scripts/ruleEd2.js"></script>
+</head>
+
+<body>
+  <div class = "main">
+    <div class = "play">
+      <div class = "header">
+        <div class = "token">
+          <span class = "bankerName">莊家</span>
+        </div>
+        的牌
+        <div class = "state" id = "bankerState">
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "empty" id = "bankerCard1"><img>
+        </div>
+        <div class = "empty" id = "bankerCard2"><img>
+        </div>
+        <div class = "empty" id = "bankerCard3"><img>
+        </div>
+        <div class = "empty" id = "bankerCard4"><img>
+        </div>
+        <div class = "empty" id = "bankerCard5"><img>
+        </div>
+      </div>
+    </div>
+    
+    <div class = "play">
+      <div class = "header">
+        <div class = "token">
+          <span class = "playerName"></span>
+        </div>
+        的牌
+        <div class = "state" id = "playerState">
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "empty" id = "playerCard1"><img>
+        </div>
+        <div class = "empty" id = "playerCard2"><img>
+        </div>
+        <div class = "empty" id = "playerCard3"><img>
+        </div>
+        <div class = "empty" id = "playerCard4"><img>
+        </div>
+        <div class = "empty" id = "playerCard5"><img>
+        </div>
+      </div>
+      <div class = "moreCards">
+        <button type = "button" class = "btn btn-primary btn-lg disabled" id = "moreCardsButton">加牌(Z)</button>
+        <button type = "button" class = "btn btn-lg disabled" id = "noMoreCardsButton">不加牌(X)</button>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type = "button" class = "btn-success btn-lg" id = "playAgainButton" disabled>再玩一局(R)</button>
+      
+    </div>
+  </div>
+  <div class = "side">
+    <div>
+      <div class = "token">
+        <span class = "bankerName">莊家</span>
+      </div>
+      的籌碼：<span id = "bankerToken"></span>
+    </div>
+    <div>
+      <div class = "token">
+        <span class = "playerName"></span>
+      </div>
+      的籌碼：<span id = "playerToken"></span>
+    </div>
+    <button type="button" class="btn btn-danger btn-xs" id = "resetButton">Reset(P)</button>
+  </div>
+</body>
+</html>
