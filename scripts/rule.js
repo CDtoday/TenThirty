@@ -46,7 +46,7 @@ $(document).ready(function(){
   //發牌機制
   function deal(who) {
     resortCheck();
-    who.card.push(cardSort[cc]);
+    who.card[who.card.length] = cardSort[cc];
 
     //莊家第一張底牌不顯示
     if (who === banker && banker.card.length === 1) {
@@ -164,7 +164,7 @@ $(document).ready(function(){
     }
 
     //比大小
-    if (totalPoint(banker) >= totalPoint(player) && totalPoint(banker) <= 10.5) {
+    if (totalPoint(banker) >= totalPoint(player) && totalPoint(banker) < 10.5 && banker.card.length !== 5) {
       $("#bankerState").append("贏了！");
       $("#playerState").append("輸了！");
       tokenTransfer(-1);
