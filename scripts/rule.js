@@ -136,7 +136,7 @@ $(document).ready(function(){
       });
 
     $("#resetButton").click(function() { //遊戲初始化(除了名字之外都Reset，即重開一局、重新洗牌且籌碼重算)
-      currentToken = 50;
+      currentToken = 0;
       tokenTransfer(0);
       restart();
       cc = 52;
@@ -181,7 +181,7 @@ $(document).ready(function(){
     $("#playerToken").empty();
     $("#playerToken").append(currentToken);
     $("#bankerToken").empty();
-    $("#bankerToken").append(100-currentToken);
+    $("#bankerToken").append(0-currentToken);
     $("#playAgainButton").prop("disabled", false);
   }
 
@@ -222,7 +222,7 @@ $(document).ready(function(){
     card: []
   };
   var cc = 0; //As currentCard
-  var currentToken = 50;
+  var currentToken = 0;
 
   //遊戲開始
   player.name = prompt("十點半遊戲已準備完成，請輸入名字。\n如未輸入，將以無名氏進行遊戲；如欲離開，請按「取消」。");
@@ -238,7 +238,7 @@ $(document).ready(function(){
     window.close();
   }
   $("#playerToken").append(currentToken);
-  $("#bankerToken").append(100-currentToken);
+  $("#bankerToken").append(0-currentToken);
   restart();
 });
 
