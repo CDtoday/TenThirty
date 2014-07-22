@@ -260,6 +260,10 @@ body {
   display: inline-block;
   font-size: 25px;
   margin-left: 50px;
+<<<<<<< HEAD
+=======
+  font-color: red;
+>>>>>>> 0dffd9e9b86f5c7bafebe71efd681a47588f6942
 }
 
 .empty {
